@@ -1,0 +1,13 @@
+# Grafana dashboard provisioning — auto-loads dashboards from JSON files.
+apiVersion: 1
+
+providers:
+  - name: 'Rate Limiter Dashboards'
+    orgId: 1
+    folder: 'Rate Limiter'
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /var/lib/grafana/dashboards
+      foldersFromFilesStructure: false

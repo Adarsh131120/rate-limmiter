@@ -1,0 +1,26 @@
+{
+  "name": "distributed-token-bucket-rate-limiter",
+  "version": "1.0.0",
+  "description": "Production-grade distributed token bucket rate limiter (Express + Redis + Lua)",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test --test-reporter=spec test/unit/**/*.test.js test/integration/**/*.test.js",
+    "test:unit": "node --test test/unit/**/*.test.js",
+    "test:integration": "node --test test/integration/**/*.test.js",
+    "load-test": "node scripts/load-test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "redis": "^4.7.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}

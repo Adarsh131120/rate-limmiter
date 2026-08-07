@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0B0E14;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255,176,32,0.08), transparent),
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: auto, 48px 48px, 48px 48px;
+  color: #E7EAF0;
+}
+
+::selection {
+  background: #FFB020;
+  color: #0B0E14;
+}
+
+/* Console panel eyebrow labels — legitimate here: this page IS a dashboard,
+   labels denote actual panel/section identifiers, not decoration. */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8891A3;
+}
+
+.panel {
+  background: #131824;
+  border: 1px solid #232A38;
+  border-radius: 6px;
+}
+
+.hairline {
+  border-color: #232A38;
+}
+
+/* Focus visibility (accessibility floor) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #FFB020;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* code block styling */
+.code-block {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.65;
+  overflow-x: auto;
+}
+.tok-kw { color: #FFB020; }
+.tok-str { color: #34D3AC; }
+.tok-com { color: #55617A; font-style: italic; }
+.tok-fn { color: #8AB4FF; }
+.tok-num { color: #FF9F5D; }
