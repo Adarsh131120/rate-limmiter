@@ -19,4 +19,4 @@ remote_write:
 
     basic_auth:
       username: "3429714"
-      password_file: /etc/prometheus/token  
+      password_file: /etc/secrets/token  
