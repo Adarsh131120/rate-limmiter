@@ -292,6 +292,7 @@ clamp_min(
   1
 )
 ```
+ <img width="1644" height="792" alt="image" src="https://github.com/user-attachments/assets/25c8be23-9714-47ed-a14a-ee5fb7c594a5" />
 
 ------------------------------------------------------------------------
 
