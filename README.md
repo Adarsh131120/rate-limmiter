@@ -16,13 +16,11 @@ Prometheus, and visualize them in Grafana Cloud.
   Service                             Link
   ----------------------------------- --------------------------------------------------
   🌐 Frontend / Demo                  [Rate Limiter
-                                      Frontend](https://rate-limiter.vercel.app)
+                                      Frontend](https://rate-limmiter.vercel.app)
 
-  ⚡ Rate Limiter API                 [Rate Limiter
-                                      API](https://rate-limiter.onrender.com)
 
   📈 Prometheus                       [Prometheus
-                                      Monitoring](https://rate-limiter-1.onrender.com)
+                                      Monitoring](https://rate-limmiter-1.onrender.com)
 
   📊 Grafana Cloud                    [Grafana
                                       Dashboard](https://goldpoplar214.grafana.net)
