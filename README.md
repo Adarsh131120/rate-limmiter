@@ -415,25 +415,7 @@ rate-limiter/
 └── README.md
 ```
 
-------------------------------------------------------------------------
-
-## 🔐 Security
-
-Secrets should **never** be committed to GitHub.
-
-For the Prometheus → Grafana Cloud connection, the Grafana
-authentication token should be supplied through the deployment
-platform's secret-management mechanism.
-
-For example, the Prometheus configuration can reference a secret file:
-
-``` yaml
-basic_auth:
-  username: "<GRAFANA_STACK_ID>"
-  password_file: /etc/secrets/token
-```
-
-The actual token should remain outside the repository.
+ 
 
 ------------------------------------------------------------------------
 
